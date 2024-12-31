@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+footer {
+  width: 100vw; /* Ensure the footer spans full viewport width */
+  margin-left: calc(-50vw + 50%); /* Offset the footer to align it with the full width */
+  padding: 2rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
