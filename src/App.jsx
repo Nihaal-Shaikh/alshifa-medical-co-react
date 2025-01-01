@@ -6,6 +6,9 @@ import Footer from './components/Footer.jsx';
 import ProductList from './components/ProductList.jsx'; // Import your ShopPage component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ContactUs from './components/ContactUs.jsx';
+import SignIn from './components/SignIn.jsx';
+import SignUp from './components/SignUp.jsx';
+import ForgotPassword from './components/ForgotPassword.jsx';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         {/* Route for the Shop Page */}
         <Route path="/shop" element={<ProductList />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
       <Footer />
     </Router>
