@@ -9,6 +9,9 @@ import ContactUs from './components/ContactUs.jsx';
 import SignIn from './components/SignIn.jsx';
 import SignUp from './components/SignUp.jsx';
 import ForgotPassword from './components/ForgotPassword.jsx';
+import AdminSignIn from './components/Admin/AdminSignIn.jsx';
+import AdminSignUp from './components/Admin/AdminSignUp.jsx';
+import AdminForgotPassword from './components/Admin/AdminForgotPassword.jsx';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/admin" element={<AdminSignIn />} />
+        <Route path="/admin-sign-up" element={<AdminSignUp />} />
+        <Route path="/admin-forgot-password" element={<AdminForgotPassword />} />
       </Routes>
       <Footer />
     </Router>
